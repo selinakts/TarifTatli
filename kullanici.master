@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -28,6 +29,9 @@
              background-color: #FFFFFF;
              font-weight: bold;
          }
+         .auto-style4 {
+             color: #660066;
+         }
     </style>
     <form id="form1" runat="server">
         <div style="height: 150px; width: 700px; margin-left: 300px; background-color: #CCCCCC;">
@@ -48,9 +52,20 @@
         <%--menüdiv--%>
         <div style="margin-left: 300px; height: 20px; width: 700px">&nbsp;</div><%--boşlık div4--%>
         
-        <div style="margin-left: 300px; height: 300px; width: 700px; background-color:#ffd800">&nbsp;
-            <div style="width:194px; float:left;height:132px; margin-left:0px; background-color: #CCCCCC;"></div>
-            <div style="width:401px; float:left;height:300px;margin-left:100px; background-color: #CCCCCC;">
+        <div style="margin-left: 300px; height: auto; width: 700px; background-color:#ffd800">&nbsp;
+            <div style="width:194px; float:left;height:auto; margin-left:0px; background-color: #CCCCCC;" class="auto-style4">
+                <h3><strong><em>KATEGORİLER</em></strong></h3>
+                <asp:DataList ID="DataList1" runat="server" style="color: #000000" Width="195px">
+                    <ItemTemplate>
+                        <div style="border: thin solid #800080">
+                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>'></asp:Label>
+                            &nbsp;(
+                            <asp:Label ID="Label2" runat="server" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
+                            )</div>
+                    </ItemTemplate>
+                </asp:DataList>
+            </div>
+            <div style="width:401px; float:left;height:auto;margin-left:100px; background-color: #CCCCCC;">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
