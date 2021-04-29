@@ -18,5 +18,10 @@ public partial class GununTatlisi : System.Web.UI.Page
 
     }
 
-   
+
+
+    protected void DataList2_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+    }
 }

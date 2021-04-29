@@ -30,4 +30,9 @@ public partial class TarifOner : System.Web.UI.Page
 
 
     }
+
+    protected void TxtTarif_TextChanged(object sender, EventArgs e)
+    {
+
+    }
 }
