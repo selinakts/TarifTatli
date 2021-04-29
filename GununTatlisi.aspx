@@ -18,10 +18,13 @@
         .auto-style8 {
             color: #000000;
         }
+        .auto-style9 {
+            margin-right: 18px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <asp:DataList ID="DataList2" runat="server" style="margin-right: 20px">
+    <asp:DataList ID="DataList2" runat="server" CssClass="auto-style9" OnSelectedIndexChanged="DataList2_SelectedIndexChanged">
         <ItemTemplate>
             <table class="auto-style1">
                 <tr>

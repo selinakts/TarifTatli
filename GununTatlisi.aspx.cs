@@ -17,4 +17,6 @@ public partial class GununTatlisi : System.Web.UI.Page
         DataList2.DataBind();
 
     }
+
+   
 }

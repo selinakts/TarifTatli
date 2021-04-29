@@ -18,23 +18,32 @@
         .auto-style9 {
             width: 103%;
         }
+        .auto-style10 {
+            height: 23px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
    
-    <asp:DataList ID="DataList2" runat="server">
+    <asp:DataList ID="DataList2" runat="server" Width="389px">
         <ItemTemplate>
             <table class="auto-style9">
                 <tr>
                     <td class="auto-style6"><strong>
-                        <asp:Label ID="Label3" runat="server" CssClass="auto-style5" Text='<%# Eval("TatliAd") %>'></asp:Label>
+
+
+                       <a href= "TatliDetay.aspx?Tatliid= <%#Eval("Tatliid") %>"><asp:Label ID="Label3" runat="server" CssClass="auto-style5" Text='<%# Eval("TatliAd") %>'></asp:Label>
+
+                       </a>
+
+
                         </strong></td>
                 </tr>
                 <tr>
                     <td class="auto-style7">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td><strong>Malzemeler:</strong>
+                    <td class="auto-style10"><strong>Malzemeler:</strong>
                         <asp:Label ID="Label4" runat="server" Text='<%# Eval("TatliMalzeme") %>'></asp:Label>
                     </td>
                 </tr>
