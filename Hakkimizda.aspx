@@ -14,11 +14,11 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <p class="auto-style5">
-        <strong><em>HAKKIMIZDA</em></strong></p>
+        <strong><em style="font-family: 'Times New Roman', Times, serif">HAKKIMIZDA</em></strong></p>
     <div class="auto-style6">
     <asp:DataList ID="DataList2" runat="server" Width="398px" CssClass="cssDisplay" OnSelectedIndexChanged="DataList2_SelectedIndexChanged">
         <ItemTemplate>
-            <asp:Label ID="Label3" runat="server" Text='<%# Eval("Metin") %>'></asp:Label>
+            <asp:Label ID="Label3" runat="server" Text='<%# Eval("Metin") %>' Font-Names="Times New Roman"></asp:Label>
         </ItemTemplate>
     </asp:DataList>
     </div>

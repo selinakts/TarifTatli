@@ -29,7 +29,7 @@
     <ItemTemplate>
         <table class="auto-style9">
             <tr>
-                <td class="auto-style6"><strong><a href= "TatliDetay.aspx?Tatliid= <%#Eval("Tatliid") %>">
+                <td class="auto-style6"><strong><a href= "TatliDetay.aspx?Tatliid= <%#Eval("Tatliid") %>" style="font-family: 'times New Roman', Times, serif">
                     <asp:Label ID="Label3" runat="server" CssClass="auto-style5" Text='<%# Eval("TatliAd") %>'></asp:Label>
                     </a></strong></td>
             </tr>
@@ -37,17 +37,17 @@
                 <td class="auto-style7">&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style10"><strong>Malzemeler:</strong>
+                <td class="auto-style10" style="font-family: 'times New Roman', Times, serif"><strong>Malzemeler:</strong>
                     <asp:Label ID="Label4" runat="server" Text='<%# Eval("TatliMalzeme") %>'></asp:Label>
                 </td>
             </tr>
             <tr>
-                <td><strong>Tarif:</strong>
+                <td style="font-family: 'times New Roman', Times, serif"><strong>Tarif:</strong>
                     <asp:Label ID="Label5" runat="server" Text='<%# Eval("TatliTarif") %>'></asp:Label>
                 </td>
             </tr>
             <tr>
-                <td><strong>Eklenme Tarihi:</strong>
+                <td style="font-family: 'times New Roman', Times, serif"><strong>Eklenme Tarihi:</strong>
                     <asp:Label ID="Label6" runat="server" CssClass="auto-style4" Text='<%# Eval("TatliTarih") %>'></asp:Label>
                         &nbsp;-&nbsp; <em><strong>Puan:</strong></em> <strong><em>
                     <asp:Label ID="Label7" runat="server" Text='<%# Eval("TatliPuan") %>'></asp:Label>

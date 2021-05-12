@@ -32,17 +32,17 @@
                 </tr>
                 <tr>
                     <td class="auto-style4" style="margin-left: 40px; text-align: center;"><em>
-                        <asp:Label ID="Label3" runat="server" CssClass="auto-style4" style="font-size: x-large; font-weight: 700; " Text='<%# Eval("GununTatliAd") %>'></asp:Label>
+                        <asp:Label ID="Label3" runat="server" CssClass="auto-style4" style="font-size: x-large; font-weight: 700; " Text='<%# Eval("GununTatliAd") %>' Font-Names="Times New Roman"></asp:Label>
                         </em></td>
                 </tr>
                 <tr>
                     <td class="auto-style4" style="margin-left: 40px">
-                        <asp:Label ID="Label4" runat="server" Text='<%# Eval("GununTatliMalzeme ") %>' CssClass="auto-style8"></asp:Label>
+                        <asp:Label ID="Label4" runat="server" Text='<%# Eval("GununTatliMalzeme ") %>' CssClass="auto-style8" Font-Names="Times New Roman"></asp:Label>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style4" style="margin-left: 80px">
-                        <asp:Label ID="Label5" runat="server" Text='<%# Eval("GununTatliTarif") %>' CssClass="auto-style8"></asp:Label>
+                        <asp:Label ID="Label5" runat="server" Text='<%# Eval("GununTatliTarif") %>' CssClass="auto-style8" Font-Names="Times New Roman"></asp:Label>
                     </td>
                 </tr>
                 <tr>
@@ -54,7 +54,7 @@
                     <td class="auto-style4" style="text-align: left; margin-left: 80px">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style4" style="text-align: left; margin-left: 80px">
+                    <td class="auto-style4" style="text-align: left; margin-left: 80px; font-family: 'times New Roman', Times, serif;">
                         <table class="auto-style1">
                             <tr>
                                 <td class="auto-style6">Puan:<asp:Label ID="Label6" runat="server" Text='<%# Eval("GununTatliPuan") %>'></asp:Label>
@@ -65,7 +65,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style8" style="margin-left: 80px">Eklenme Tarih:<asp:Label ID="Label7" runat="server" Text='<%# Eval("GununTatliTarih") %>'></asp:Label>
+                    <td class="auto-style8" style="margin-left: 80px; font-family: 'times New Roman', Times, serif;">Eklenme Tarih:<asp:Label ID="Label7" runat="server" Text='<%# Eval("GununTatliTarih") %>'></asp:Label>
                     </td>
                 </tr>
                 <tr>

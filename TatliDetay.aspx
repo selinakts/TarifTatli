@@ -33,7 +33,7 @@
     <p>
         <strong>
         <asp:Label ID="Label3" runat="server" CssClass="auto-style5" Text="Label"></asp:Label>
-        <asp:DataList ID="DataList2" runat="server">
+        <asp:DataList ID="DataList2" runat="server" Width="395px">
             <ItemTemplate>
                 <table class="auto-style1">
                     <tr>
@@ -51,7 +51,7 @@
                 </table>
             </ItemTemplate>
         </asp:DataList>
-            <div class="auto-style8">YORUM YAPMA PANELİ</div>
+            <div class="auto-style8" style="font-family: 'Times New Roman', Times, serif">YORUM YAPMA PANELİ</div>
             <asp:Panel ID="Panel1" runat="server">
                 <table class="auto-style1">
                     <tr>
@@ -59,27 +59,27 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style9">Ad Soyad:</td>
+                        <td class="auto-style9" style="font-family: 'Times New Roman', Times, serif">Ad Soyad:</td>
                         <td>
-                            <asp:TextBox ID="TextBox2" runat="server" Height="20px" Width="200px"></asp:TextBox>
+                            <asp:TextBox ID="TextBox2" runat="server" Height="20px" Width="200px" Font-Names="Times New Roman"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style9">Mail:</td>
+                        <td class="auto-style9" style="font-family: 'Times New Roman', Times, serif">Mail:</td>
                         <td>
-                            <asp:TextBox ID="TextBox3" runat="server" Height="20px" Width="200px"></asp:TextBox>
+                            <asp:TextBox ID="TextBox3" runat="server" Height="20px" Width="200px" Font-Names="Times New Roman"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style10">Yorum:</td>
+                        <td class="auto-style10" style="font-family: 'Times New Roman', Times, serif">Yorum:</td>
                         <td class="auto-style11">
-                            <asp:TextBox ID="TextBox4" runat="server" Height="120px" TextMode="MultiLine" Width="200px"></asp:TextBox>
+                            <asp:TextBox ID="TextBox4" runat="server" Height="120px" TextMode="MultiLine" Width="200px" Font-Names="Times New Roman"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
                         <td class="auto-style9">
-                            <asp:Button ID="Button1" runat="server" CssClass="auto-style12" OnClick="Button1_Click" Text="Yorum Yap" Width="200px" />
+                            <asp:Button ID="Button1" runat="server" CssClass="auto-style12" OnClick="Button1_Click" Text="Yorum Yap" Width="200px" Font-Names="Times New Roman" />
                         </td>
                     </tr>
                     <tr>

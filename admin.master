@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Kullanici.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+   
+<body>
+     <style>
+        body{
+            background-color:#ffd800 ;
+        }
+         .auto-style4 {
+             color: #660066;
+         }
+         .auto-style5 {
+             width: 100%;
+             height: 186px;
+         }
+         .auto-style6 {
+             font-size: large;
+             height: 43px;
+         }
+         .auto-style20 {
+             font-size: x-small;
+             color: #0000FF;
+             height: 20px;
+         }
+         .auto-style21 {
+             height: 20px;
+         }
+         .auto-style22 {
+             font-size: medium;
+         }
+         .auto-style23 {
+             height: 20px;
+             color: #000000;
+             font-size: x-large;
+         }
+    </style>
+    <form id="form1" runat="server">
+        <div style="height: 150px; width: 700px; margin-left: 300px; background-color: #CCCCCC;">
+            <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/Banner Foto/adminheader.jpg" Width="700px" />
+        </div>
+        <div style="margin-left: 300px; height: 20px; width: 700px"></div>
+        <%--boşlık div2--%>
+        <%--menüdiv--%>
+        <%--boşlık div4--%>
+        
+        <div style="margin-left: 300px; height: auto; width: 700px; background-color:#ffd800">&nbsp;
+            <div style="width:194px; float:left;height:auto; margin-left:0px; background-color: #CCCCCC;" class="auto-style4">
+                <table class="auto-style5">
+                    <tr>
+                        <td class="auto-style6">
+                            <h3 class="auto-style23"><strong style="font-family: 'times New Roman', Times, serif">MENÜLER</strong></h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style21" style="border: medium groove #FFFFFF"><a href="Kategoriler.aspx" class="auto-style22" style="font-family: 'times New Roman', Times, serif"> KATEGORİLER</a></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style20" style="border: medium groove #FFFFFF; font-family: 'Times New Roman', Times, serif;"><strong>TATLILAR</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style20" style="border: medium groove #FFFFFF; font-family: 'Times New Roman', Times, serif;"><strong>YORUMLAR</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style20" style="border: medium groove #FFFFFF; font-family: 'Times New Roman', Times, serif;"><strong>MESAJLAR</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style20" style="border: medium groove #FFFFFF; font-family: 'Times New Roman', Times, serif;"><strong>GÜNÜN TATLISI</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style20" style="border: medium groove #FFFFFF; font-family: 'Times New Roman', Times, serif;"><strong>TARİF ÖNERİLERİ</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style20" style="border: medium groove #FFFFFF; font-family: 'Times New Roman', Times, serif;"><strong>HAKKIMIZDA </strong></td>
+                    </tr>
+                </table>
+            </div>
+            <div style="width:401px; float:left;height:auto;margin-left:100px; background-color: #CCCCCC;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

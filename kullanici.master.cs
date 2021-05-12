@@ -17,4 +17,9 @@ public partial class kullanici : System.Web.UI.MasterPage
         DataList1.DataBind();/*datbind metod işlemleri dataliste aktarma işlemi*/
 
     }
+
+    protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+    }
 }

@@ -32,6 +32,16 @@
          .auto-style4 {
              color: #660066;
          }
+         .auto-style5 {
+             color: #0000FF;
+         }
+         .auto-style6 {
+             text-align: center;
+             font-style: italic;
+             background-color: #FFFFFF;
+             font-weight: bold;
+             color: #0000FF;
+         }
     </style>
     <form id="form1" runat="server">
         <div style="height: 150px; width: 700px; margin-left: 300px; background-color: #CCCCCC;">
@@ -42,10 +52,10 @@
         <div style="margin-left: 300px; height: 25px; width: 700px; background-color: #ffd800;">
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style3"> <a href="Anasayfa.aspx">ANA SAYFA</a></td>
-                    <td class="auto-style3"> <a href="GununTatlisi.aspx"> GÜNÜN TATLISI</a></td>
-                    <td class="auto-style3"> <a href="TarifOner.aspx">TARİF ÖNER</a></td>
-                    <td class="auto-style2"> <b> <a href="Hakkimizda.aspx">HAKKIMIZDA</a> </b> </td>
+                    <td class="auto-style3" style="font-family: 'Times New Roman', Times, serif"> <a href="Anasayfa.aspx" style="font-family: 'times New Roman', Times, serif">ANA SAYFA</a></td>
+                    <td class="auto-style6" style="font-family: 'Times New Roman', Times, serif"> <a href="GununTatlisi.aspx" style="font-family: 'times New Roman', Times, serif"> GÜNÜN TATLISI</a></td>
+                    <td class="auto-style3" style="font-family: 'Times New Roman', Times, serif"> <a href="TarifOner.aspx" style="font-family: 'times New Roman', Times, serif">TARİF ÖNER</a></td>
+                    <td class="auto-style2" style="font-family: 'Times New Roman', Times, serif"> <b> <a href="Hakkimizda.aspx" style="font-family: 'Times New Roman', Times, serif">HAKKIMIZDA</a><span class="auto-style5"> </span> </b> </td>
                     <td class="auto-style3"><a href="İletisim.aspx">İLETİŞİM</a></td>
                 </tr>
             </table>
@@ -55,12 +65,12 @@
         
         <div style="margin-left: 300px; height: auto; width: 700px; background-color:#ffd800">&nbsp;
             <div style="width:194px; float:left;height:auto; margin-left:0px; background-color: #CCCCCC;" class="auto-style4">
-                <h3><strong><em>KATEGORİLER</em></strong></h3>
-                <asp:DataList ID="DataList1" runat="server" style="color: #000000" Width="195px">
+                <h3><strong><em style="font-family: 'times New Roman', Times, serif">KATEGORİLER</em></strong></h3>
+                <asp:DataList ID="DataList1" runat="server" style="color: #000000" Width="195px" OnSelectedIndexChanged="DataList1_SelectedIndexChanged" Font-Names="Times New Roman">
                     <ItemTemplate>
                         <div style="border: thin solid #800080">
                            <a href="KategoriDetay.aspx?Kategoriid=<%#Eval("Kategoriid") %>"> <strong>
-                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>'></asp:Label>
+                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>' Font-Names="Times New Roman"></asp:Label>
                             </strong></a>
                             &nbsp;(
                             <asp:Label ID="Label2" runat="server" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
