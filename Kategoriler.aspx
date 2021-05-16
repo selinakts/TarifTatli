@@ -81,7 +81,7 @@
                             <asp:Label ID="Label1" runat="server" CssClass="auto-style6" Text='<%# Eval("KategoriAd") %>' Font-Names="Times New Roman"></asp:Label>
                         </td>
                         <td class="auto-style40">
-                            <asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/icon/delete.png" Width="30px" />
+                           <a href="Kategoriler.aspx?kategoriid=<%#Eval("Kategoriid") %> &islem=sil "><asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/icon/delete.png" Width="30px" /></a>
                         </td>
                         <td class="auto-style37">
                             <a href="KategoriAdminDetay.aspx?Kategoriid=<%#Eval("Kategoriid") %>"> <asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/icon/update.png" Width="30px" /></a>

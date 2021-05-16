@@ -62,10 +62,10 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style21" style="border: medium groove #FFFFFF"><a href="Kategoriler.aspx" class="auto-style22" style="font-family: 'times New Roman', Times, serif"> KATEGORİLER</a></td>
+                        <td class="auto-style21" style="border: medium groove #FFFFFF"><a href="Kategoriler.aspx" class="auto-style22" style="font-family: 'times New Roman', Times, serif"> <strong>KATEGORİLER</strong></a></td>
                     </tr>
                     <tr>
-                        <td class="auto-style20" style="border: medium groove #FFFFFF; font-family: 'Times New Roman', Times, serif;"><strong>TATLILAR</strong></td>
+                        <td class="auto-style20" style="border: medium groove #FFFFFF; font-family: 'Times New Roman', Times, serif;"><strong><a href="Tatliler.aspx" style="font-family: 'times New Roman', Times, serif">TATLILAR</a></strong></td>
                     </tr>
                     <tr>
                         <td class="auto-style20" style="border: medium groove #FFFFFF; font-family: 'Times New Roman', Times, serif;"><strong>YORUMLAR</strong></td>

@@ -9,12 +9,28 @@ using System.Data.SqlClient;
 public partial class Kategoriler : System.Web.UI.Page
 {
     data baglan = new data();
+    string id = "";
+    string islem = "";
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Page.IsPostBack == false)
+        {
+            id = Request.QueryString["Kategoriid"];
+            islem = Request.QueryString["islem"];
+        }
         SqlCommand komut = new SqlCommand("Select * From Table_Kategoriler", baglan.bag());/* Baglantı oluşturma*/
         SqlDataReader dr = komut.ExecuteReader();/* Sorguyu okutma*/
         DataList1.DataSource = dr;
         DataList1.DataBind();
+
+        //silme işlemi
+        if (islem == "sil")
+        {
+            SqlCommand komutsil = new SqlCommand("delete from Table_Kategoriler where kategoriid=@p1", baglan.bag());
+            komutsil.Parameters.AddWithValue("@p1", id);
+            komutsil.ExecuteNonQuery();
+            baglan.bag().Close();
+        }
 
         Panel2.Visible = false;
         Panel4.Visible = false;
