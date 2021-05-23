@@ -32,9 +32,8 @@
         .auto-style36 {
             border: 2px solid #456879;
             border-radius: 10px;
-            height: 22px;
-            width: 230px;
             background-color: #FFCC00;
+            font-size: medium;
         }
     .auto-style37 {
         text-align: right;
@@ -69,6 +68,14 @@
             width: 230px;
             font-weight: bold;
         }
+        .auto-style47 {
+            font-size: large;
+            height: 43px;
+            color: #000000;
+        }
+        .auto-style48 {
+            color: #000000;
+        }
     </style>
     </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -92,10 +99,10 @@
                 <table class="auto-style24">
                     <tr>
                         <td class="auto-style38">
-                            <asp:Label ID="Label1" runat="server" CssClass="auto-style6" Text='<%# Eval("TatliAd") %>' Font-Names="Times New Roman"></asp:Label>
+                            <asp:Label ID="Label1" runat="server" CssClass="auto-style47" Text='<%# Eval("TatliAd") %>' Font-Names="Times New Roman"></asp:Label>
                         </td>
                         <td class="auto-style40">
-                           <a href="Kategoriler.aspx?kategoriid=<%#Eval("Kategoriid") %> &islem=sil "><asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/icon/delete.png" Width="30px" /></a>
+                           <a href="Tatliler.aspx?kategoriid=<%#Eval("Tatliid") %> &islem=sil "><asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/icon/delete.png" Width="30px" /></a>
                         </td>
                         <td class="auto-style37">
                             <a href="TatliDuzenle.aspx?Tatliid=<%#Eval("tatliid") %>"> <asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/icon/update.png" Width="30px" /></a>
@@ -127,25 +134,25 @@
                 <td class="auto-style44"></td>
             </tr>
             <tr>
-                <td><strong>Tatlı</strong> <strong style="font-family: 'Times New Roman', Times, serif">&nbsp;Ad:</strong></td>
+                <td class="auto-style48"><span class="auto-style48"><strong>Tatlı</strong></span> <span class="auto-style48"><strong style="font-family: 'Times New Roman', Times, serif">&nbsp;Ad:</strong></span></td>
                 <td>
                     <asp:TextBox ID="TextBox1" runat="server" CssClass="tb5" Font-Names="Times New Roman" Width="300px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td><strong>Malzemeler</strong><strong style="font-family: 'Times New Roman', Times, serif">:</strong></td>
+                <td class="auto-style48"><strong>Malzemeler</strong><strong style="font-family: 'Times New Roman', Times, serif">:</strong></td>
                 <td>
                     <asp:TextBox ID="TextBox2" runat="server" CssClass="tb5" Font-Names="Times New Roman" Height="100px" TextMode="MultiLine" Width="300px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td><strong>Tarif</strong>:</td>
+                <td class="auto-style48"><strong>Tarif</strong>:</td>
                 <td>
                     <asp:TextBox ID="TextBox3" runat="server" CssClass="tb5" Font-Names="Times New Roman" Height="200px" TextMode="MultiLine" Width="300px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td><strong>Kategorisi</strong>:</td>
+                <td class="auto-style48"><strong>Kategorisi</strong>:</td>
                 <td><strong>
                     <asp:DropDownList ID="DropDownList1" runat="server" CssClass="auto-style46" Font-Bold="True" Font-Names="Times New Roman" Font-Size="Medium" Width="300px">
                     </asp:DropDownList>
@@ -158,7 +165,7 @@
             <tr>
                 <td>&nbsp;</td>
                 <td class="auto-style45"><strong>
-                    <asp:Button ID="BtnEkle0" runat="server" CssClass="auto-style36" Font-Names="Times New Roman" OnClick="BtnEkle0_Click" Text="Ekle" Width="80px" />
+                    <asp:Button ID="BtnEkle0" runat="server" CssClass="auto-style36" Font-Names="Times New Roman" OnClick="BtnEkle0_Click" Text="Ekle" Width="120px" />
                     </strong></td>
             </tr>
             <tr>

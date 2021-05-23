@@ -70,7 +70,7 @@
         <tr>
             <td class="auto-style25" style="font-family: 'times New Roman', Times, serif">&nbsp;</td>
             <td class="auto-style29"><strong>
-                <asp:Button ID="Button1" runat="server" CssClass="auto-style30" Font-Names="Times New Roman" Text="Güncelle" Width="135px" />
+                <asp:Button ID="Button1" runat="server" CssClass="auto-style30" Font-Names="Times New Roman" Text="Güncelle" Width="135px" OnClick="Button1_Click" />
                 </strong></td>
         </tr>
     </table>
