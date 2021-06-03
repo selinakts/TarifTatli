@@ -68,7 +68,7 @@
                         <td class="auto-style20" style="border: medium groove #FFFFFF; font-family: 'Times New Roman', Times, serif;"><strong><a href="Tatliler.aspx" style="font-family: 'times New Roman', Times, serif">TATLILAR</a></strong></td>
                     </tr>
                     <tr>
-                        <td class="auto-style20" style="border: medium groove #FFFFFF; font-family: 'Times New Roman', Times, serif;"><strong>YORUMLAR</strong></td>
+                        <td class="auto-style20" style="border: medium groove #FFFFFF; font-family: 'Times New Roman', Times, serif;"><strong><a href="Yorumlar.aspx" style="font-family:'Times New Roman', Times, serif">YORUMLAR</strong></td>
                     </tr>
                     <tr>
                         <td class="auto-style20" style="border: medium groove #FFFFFF; font-family: 'Times New Roman', Times, serif;"><strong>MESAJLAR</strong></td>

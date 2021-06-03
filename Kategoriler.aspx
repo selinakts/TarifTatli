@@ -72,7 +72,7 @@
         </table>
     </asp:Panel>
     <asp:Panel ID="Panel2" runat="server">
-        <asp:DataList ID="DataList1" runat="server" Width="401px">
+        <asp:DataList ID="DataList1" runat="server" Width="401px" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
             <EditItemStyle Font-Names="Times New Roman" />
             <ItemTemplate>
                 <table class="auto-style24">

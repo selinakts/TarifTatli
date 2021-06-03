@@ -71,4 +71,9 @@ public partial class Kategoriler : System.Web.UI.Page
         komut.ExecuteNonQuery();
         baglan.bag().Close();
     }
+
+    protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+    }
 }
