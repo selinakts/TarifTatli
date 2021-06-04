@@ -27,6 +27,9 @@
         background-color: #8DB02B;
             height: 34px;
         }
+        .auto-style44 {
+            text-align: right;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -52,9 +55,7 @@
                         <td class="auto-style38">
                             <asp:Label ID="Label1" runat="server" CssClass="auto-style6" Text='<%# Eval("YorumAdSoyad") %>' Font-Names="Times New Roman"></asp:Label>
                         </td>
-                        <td class="auto-style40">
-                        </td>
-                        <td class="auto-style37">
+                        <td class="auto-style44">
                              <asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/icon/update.png" Width="30px" />
                         </td>
                     </tr>
@@ -84,9 +85,7 @@
                         <td class="auto-style38">
                             <asp:Label ID="Label1" runat="server" CssClass="auto-style6" Text='<%# Eval("YorumAdSoyad") %>' Font-Names="Times New Roman"></asp:Label>
                         </td>
-                        <td class="auto-style40">
-                        </td>
-                        <td class="auto-style37">
+                        <td class="auto-style44">
                              <a href="YorumDetay.aspx?Yorumid=<%#Eval("Yorumid") %>"><asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/icon/update.png" Width="30px" /></a>
                         </td>
                     </tr>
