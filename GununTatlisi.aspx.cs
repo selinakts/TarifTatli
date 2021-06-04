@@ -11,7 +11,7 @@ public partial class GununTatlisi : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        SqlCommand komut = new SqlCommand("Select * From Table_GununTatlisi", baglan.bag());
+        SqlCommand komut = new SqlCommand("Select * From Table_Tatliler where durum=1", baglan.bag());
         SqlDataReader oku = komut.ExecuteReader();
         DataList2.DataSource = oku;
         DataList2.DataBind();

@@ -34,6 +34,12 @@
             font-size: medium;
             background-color: #FFCC00;
         }
+        .auto-style31 {
+            border: 2px solid #456879;
+            border-radius: 10px;
+            font-size: medium;
+            background-color: #8DB02B;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -63,7 +69,7 @@
         <tr>
             <td class="auto-style25" style="font-family: 'times New Roman', Times, serif"><strong>Kategori:</strong></td>
             <td class="auto-style28"><strong>
-                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="auto-style27" Font-Names="Times New Roman" Width="300px">
+                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="tb5" Font-Names="Times New Roman" Width="300px">
                 </asp:DropDownList>
                 </strong></td>
         </tr>
@@ -72,6 +78,12 @@
             <td class="auto-style29"><strong>
                 <asp:Button ID="Button1" runat="server" CssClass="auto-style30" Font-Names="Times New Roman" Text="Güncelle" Width="135px" OnClick="Button1_Click" />
                 </strong></td>
+        </tr>
+        <tr>
+            <td class="auto-style25" style="font-family: 'times New Roman', Times, serif">&nbsp;</td>
+            <td class="auto-style29">
+                <asp:Button ID="Button2" runat="server" CssClass="auto-style31" Font-Names="Times New Roman" OnClick="Button2_Click" Text="Günün Tatlısını Seç" Width="135px" />
+            </td>
         </tr>
     </table>
 </asp:Content>

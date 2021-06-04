@@ -53,4 +53,18 @@ public partial class TatliDuzenle : System.Web.UI.Page
         baglan.bag().Close();
 
     }
+
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        SqlCommand komut = new SqlCommand("update Table_Tatliler set durum=0", baglan.bag());
+        komut.ExecuteNonQuery();
+        baglan.bag().Close();
+
+        //günün yemegi için durum true yapma
+        SqlCommand komut2 = new SqlCommand("update Table_Tatliler set durum=1 tatliid=@p1", baglan.bag());
+        komut2.Parameters.AddWithValue("@p1", id);
+        komut2.ExecuteNonQuery();
+        baglan.bag().Close();
+        
+    }
 }
