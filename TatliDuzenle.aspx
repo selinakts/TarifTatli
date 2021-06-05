@@ -34,12 +34,12 @@
             font-size: medium;
             background-color: #FFCC00;
         }
-        .auto-style31 {
-            border: 2px solid #456879;
-            border-radius: 10px;
-            font-size: medium;
-            background-color: #8DB02B;
-        }
+    .auto-style31 {
+        border: 2px solid #456879;
+        border-radius: 10px;
+        font-size: medium;
+        background-color: #8DB02B;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
