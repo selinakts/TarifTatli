@@ -55,10 +55,10 @@
         <table class="auto-style24">
             <tr>
                 <td class="auto-style43"><strong>
-                    <asp:Button ID="Button8" runat="server" CssClass="auto-style31" Height="30px" Text="+" Width="30px"  />
+                    <asp:Button ID="Button8" runat="server" CssClass="auto-style31" Height="30px" Text="+" Width="30px" OnClick="Button8_Click"  />
                     </strong></td>
                 <td class="auto-style28"><strong>
-                    <asp:Button ID="Button9" runat="server" CssClass="auto-style31" Height="30px"  Text="-" Width="30px"  />
+                    <asp:Button ID="Button9" runat="server" CssClass="auto-style31" Height="30px"  Text="-" Width="30px" OnClick="Button9_Click"  />
                     </strong></td>
                 <td class="auto-style42" style="font-family: 'Times New Roman', Times, serif"><strong>HAKKIMIZDA</strong></td>
             </tr>

@@ -37,4 +37,15 @@ public partial class HakkimizdeAdmin : System.Web.UI.Page
     {
 
     }
+
+    protected void Button8_Click(object sender, EventArgs e)
+    {
+        Panel2.Visible = true;
+    }
+
+    protected void Button9_Click(object sender, EventArgs e)
+    {
+        Panel2.Visible = false;
+
+    }
 }
