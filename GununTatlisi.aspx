@@ -47,7 +47,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style4" style="text-align: center; margin-left: 80px">
-                        <asp:Image ID="Image1" runat="server" Height="185px" style="text-align: center" Width="376px" BorderColor="#660066" ForeColor="White" ImageUrl="~/Resimler/Cheesecake.jpg" ImageAlign="Middle" />
+                        <asp:Image ID="Image1" runat="server" Height="185px" style="text-align: center" Width="376px" BorderColor="#660066" ForeColor="White" ImageUrl='<%# Eval("TatliResim") %>' ImageAlign="Middle" />
                     </td>
                 </tr>
                 <tr>

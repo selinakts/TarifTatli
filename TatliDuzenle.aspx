@@ -40,6 +40,11 @@
         font-size: medium;
         background-color: #8DB02B;
     }
+        .auto-style32 {
+            height: 23px;
+            text-align: left;
+            margin-left: 80px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -72,6 +77,12 @@
                 <asp:DropDownList ID="DropDownList1" runat="server" CssClass="tb5" Font-Names="Times New Roman" Width="300px">
                 </asp:DropDownList>
                 </strong></td>
+        </tr>
+        <tr>
+            <td class="auto-style25" style="font-family: 'times New Roman', Times, serif"><strong>Resim:</strong></td>
+            <td class="auto-style32">
+                <asp:FileUpload ID="FileUpload1" runat="server" CssClass="tb5" Width="299px" />
+            </td>
         </tr>
         <tr>
             <td class="auto-style25" style="font-family: 'times New Roman', Times, serif">&nbsp;</td>

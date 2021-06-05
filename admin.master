@@ -80,7 +80,7 @@
                         <td class="auto-style20" style="border: medium groove #FFFFFF; font-family: 'Times New Roman', Times, serif;"><strong><a href="Tarifler.aspx" style="font-family:'Times New Roman', Times, serif">TARİFLER</a></strong></td>
                     </tr>
                     <tr>
-                        <td class="auto-style20" style="border: medium groove #FFFFFF; font-family: 'Times New Roman', Times, serif;"><strong>HAKKIMIZDA </strong></td>
+                        <td class="auto-style20" style="border: medium groove #FFFFFF; font-family: 'Times New Roman', Times, serif;"><strong><a href="HakkimizdeAdmin.aspx" style="font-family:'Times New Roman', Times, serif">HAKKIMIZDA</a> </strong></td>
                     </tr>
                 </table>
             </div>

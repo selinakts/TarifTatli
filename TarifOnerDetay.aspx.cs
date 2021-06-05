@@ -21,11 +21,11 @@ public partial class TarifOnerDetay : System.Web.UI.Page
 
             while (dr.Read())
             {
-                TextBox2.Text = dr[1].ToString();
-                TextBox3.Text = dr[2].ToString();
-                TextBox4.Text = dr[3].ToString();
-                TextBox5.Text = dr[5].ToString();
-                TextBox6.Text = dr[6].ToString();
+                TextBox2.Text = dr[0].ToString();
+                TextBox3.Text = dr[1].ToString();
+                TextBox4.Text = dr[2].ToString();
+                TextBox5.Text = dr[3].ToString();
+                TextBox6.Text = dr[4].ToString();
             }
             baglan.bag().Close();
 

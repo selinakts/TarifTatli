@@ -16,7 +16,7 @@ public partial class TatliDuzenle : System.Web.UI.Page
 
         if (Page.IsPostBack == false) /*sayfayının yeniden yüklenmesini durdurur*/
         {
-            SqlCommand komut = new SqlCommand("select * from Table_Tatliler where Tatliid=@p1", baglan.bag());
+            SqlCommand komut = new SqlCommand("select * from Table_Tatliler where tatliid=@p1", baglan.bag());
             komut.Parameters.AddWithValue("@p1", id);
 
             SqlDataReader dr = komut.ExecuteReader();
@@ -43,11 +43,13 @@ public partial class TatliDuzenle : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        SqlCommand komut = new SqlCommand("update Table_Tatliler set tatliad=@p1, tatlimalzeme=@p2,tatlitarif=@p3,kategoriid=@p4 where tatliid=@p5 ", baglan.bag());
+        FileUpload1.SaveAs(Server.MapPath("/Resimler/" + FileUpload1.FileName));
+        SqlCommand komut = new SqlCommand("update Table_Tatliler set tatliad=@p1, tatlimalzeme=@p2,tatlitarif=@p3,kategoriid=@p4,TatliResim=@p6 where tatliid=@p5 ", baglan.bag());
         komut.Parameters.AddWithValue("@p1", TextBox1.Text);
         komut.Parameters.AddWithValue("@p2", TextBox2.Text);
         komut.Parameters.AddWithValue("@p3", TextBox3.Text);
         komut.Parameters.AddWithValue("@p4", DropDownList1.SelectedValue);
+        komut.Parameters.AddWithValue("@p6", "~/Resimler/"+FileUpload1.FileName);
         komut.Parameters.AddWithValue("@p5", id);
         komut.ExecuteNonQuery();
         baglan.bag().Close();
